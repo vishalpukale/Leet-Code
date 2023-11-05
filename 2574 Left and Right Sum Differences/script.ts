@@ -5,6 +5,8 @@ function leftRightDifference(nums: number[]): number[] {
     let rightSum: number[] = [];
     let ans: number[] = [];
 
+    if(nums.length <= 1) return [0];
+
     //for leftsum
     for(let i = 1; i < nums.length; i++) {
         leftSum[0] = 0;
